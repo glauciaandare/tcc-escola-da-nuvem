@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #0077B5;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+.profile a {
+    text-decoration: none;
+    color: #0077B5;
+    display: block;
+    margin-top: 10px;
+}
+
+  
+.profile {
+    text-align: center;
+    width: 100%; 
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.profile img {
+    max-width: 100%; 
+    height: auto;
+    max-height: 100px; 
+    max-width: 200px; 
+}
+
+
+@media (min-width: 768px) {
+    .profile {
+        width: 45%;
+    }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px; /* Ajuste conforme necessário para controlar o tamanho das logos */
+    height: auto;
+    margin: 10px; /* Adicione margens conforme necessário */
+    padding: 10px; /* Adicione preenchimentos conforme necessário */
+}
+
+.logo-left {
+    float: left;
+}
+
+.logo-right {
+    float: right;
+}
+
+/* Consulta de mídia para telas menores (como celulares) */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 50px; /* Reduza ainda mais o tamanho para telas menores */
+        margin: 5px; /* Ajuste as margens para telas menores */
+        padding: 5px; /* Ajuste os preenchimentos para telas menores */
+    }
+
+    .logo-left,
+    .logo-right {
+        max-width: 50px; /* Reduza ainda mais o tamanho para telas menores */
+    }
+}
+
